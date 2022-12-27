@@ -1,5 +1,5 @@
 # jenkinsfile-pipeline-project
-Integrating Jenkins Pipeline with GitHub Webhook
+## Integrating Jenkins Pipeline with GitHub Webhook
 
 - Go to your Github ``jenkinsfile-pipeline-project`` repository page and click on `Settings`.
 
@@ -71,7 +71,7 @@ git push
 
 
 
-## Part 3 - Configuring Jenkins Pipeline with GitHub Webhook to Run the Python Code
+##- Configuring Jenkins Pipeline with GitHub Webhook to Run the Python Code
 
 - To build the `python` code with Jenkins pipeline using the `Jenkinsfile` and `GitHub Webhook`, we will leverage from the same job created in Part 2 (named as `pipeline-with-jenkinsfile-and-webhook`). 
 
@@ -121,7 +121,7 @@ git push
 
 
 
-## Part 4 - Creating a Pipeline with Poll SCM
+##- Creating a Pipeline with Poll SCM
 
 - Go to the Jenkins dashboard and click on `New Item` to create a pipeline.
 
