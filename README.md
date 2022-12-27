@@ -135,6 +135,26 @@ git push
   - for definition, select `Pipeline script from SCM`
   - for SCM, select `Git`
     - for `Repository URL`, select `https://github.com/<your-github-account-name>/jenkinsfile-pipeline-project/`, show the `Jenkinsfile` here.
+    
+    pipeline {
+    agent any
+    stages {
+        stage('build') {
+            steps {
+                echo 'Compiling the java source code...'
+                sh 'javac Hello.java'
+            }
+        }
+        stage('run') {
+            steps {
+                echo 'Running the compiled java code.'
+                sh 'java Hello'
+            }
+        }
+    }
+}
+
+
     - approve that the `Script Path` is `Jenkinsfile`
 - `Save` and `Build Now` and observe the behavior.
 
